@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +9,8 @@
 
 	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
-	<link rel="icon" type="image/png" sizes="16x16" href ="{% static 'images/favicon-16x16.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+	<link rel="icon" type="favicon" href="{% static 'images/favicon.ico' %}">
 	<link rel="manifest" href="{% static 'images/site.webmanifest' %}">
 
 	<!-- Favicon -->
@@ -36,12 +38,12 @@
 
 	{% if messages %}
 
-		{% for message in messages %}
-			<div class="alert alert--{{message.tags}}">
-				<p class="alert__message">{{message}}</p>
-				<button class='alert__close'>x</button>
-			</div>
-		{% endfor %}
+	{% for message in messages %}
+	<div class="alert alert--{{message.tags}}">
+		<p class="alert__message">{{message}}</p>
+		<button class='alert__close'>x</button>
+	</div>
+	{% endfor %}
 
 	{% endif %}
 
@@ -49,6 +51,7 @@
 
 
 </body>
-	<script src="{% static 'uikit/app.js' %}"></script>
-	<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'uikit/app.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
 </html>
