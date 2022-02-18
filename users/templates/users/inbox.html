@@ -10,7 +10,7 @@
 
         {% for message in messageRequests %}
         {% if message.is_read == False %}
-        <li class="message message--unread">
+        <li class="message message--unread"></li>
         {% else %}
         <li class="message">
         {% endif %}
@@ -23,8 +23,10 @@
         </li>
         
         {% endfor %}
-
+      
       </ul>
+
+      
     </div>
   </main>
   {% endblock content %}
