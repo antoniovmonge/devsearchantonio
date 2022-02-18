@@ -1,10 +1,14 @@
-# Data analysis
-- Document here the project: devsearchantonio
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Django Web Application
+- Description: Social Net + Project Post Web Aplication
 
-Please document the project the better you can.
+## Features
+- User authentication (Login/Register/Logout)
+- Automatic sendings Email confirmation / Password recovery
+- Search bar (by developer name or project title)
+- Private messaging
+- Vote system (Positiv or Negative) + Feedback by Project
+- Admin panel
+- User Profile View for other users with all social links and projects
 
 # Startup the project
 
